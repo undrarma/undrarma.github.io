@@ -29,13 +29,17 @@ body {font-size:16px;}
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Welcome!</b></h1>
+    <h1 class="w3-jumbo"><b>Trial Request</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
   </div>
   
   <!-- Contact -->
+  <form action="./index.html">
+    <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Back to Home</button>
+  </form> 
+
   <div class="w3-container" id="contact" style="margin-top:75px">
-    <button type="button" id="new_order_btn" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">New Order</button>
+    <button type="button" id="new_order_btn" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Trial Request</button>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <form id="order_form">
       <div class="w3-section">
@@ -47,71 +51,25 @@ body {font-size:16px;}
         <input class="w3-input w3-border" type="text" name="Email" required>
       </div>
       <div class="w3-section">
-        <label>Department</label>
-        <input class="w3-input w3-border" type="text" name="Department" required>
+        <label>Company</label>
+        <input class="w3-input w3-border" type="text" name="Company" required>
       </div>
 	  <div class="w3-section">
-        <label>Article</label>
-        <input class="w3-input w3-border" type="text" name="Article" required>
+        <label>Role</label>
+        <input class="w3-input w3-border" type="text" name="Role" required>
       </div>
 	  <div class="w3-section">
-        <label>Order ID</label>
-        <input class="w3-input w3-border" type="text" name="Order Id" required>
+        <label>Address</label>
+        <input class="w3-input w3-border" type="text" name="Addres" required>
       </div>
 	  <div class="w3-section">
-        <label>Price</label>
-        <input class="w3-input w3-border" type="text" name="Price" required>
+        <label>Cellphone number</label>
+        <input class="w3-input w3-border" type="text" name="Cellphone" required>
       </div>
-	  <div class="w3-section">
-        <label>Quantity</label>
-        <input class="w3-input w3-border" type="text" name="Quantity" required>
-      </div>
-      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Order</button>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Request Trial</button>
     </form>  
   </div>
 
-  <div class="w3-container" id="contact" style="margin-top:75px">
-    <button type="button" id="troubleshooting_btn" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Support</button>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <form id="support_form">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
-      </div>
-	  <div class="w3-section">
-          <label>Department</label>
-		  <br>
-		  <select name="Department" id="dept">
-			<option value="IT">IT</option>
-			<option value="Sales">Sales</option>
-			<option value="Management">Management</option>
-		  </select>
-      </div>
-	  <div class="w3-section">
-        <label>Title</label>
-        <input class="w3-input w3-border" type="text" name="Price" required>
-      </div>
-	  <div class="w3-section">
-        <label>Explanation of the problem</label>
-		<br>
-		<textarea id="w3review" name="w3review" rows="4" cols="50">
-			
-		</textarea>
-  <br><br>
-  <input type="submit" value="Submit">
-      </div>
-      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Order</button>
-    </form>  
-  </div>
-   <div class="w3-container" id="contact" style="margin-top:75px">
-		<form action="./trial.html">
-			<button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Request Trial</button>
-		</form> 
-	</div>
 
 
 <!-- End page content -->
