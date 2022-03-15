@@ -35,8 +35,6 @@ body {font-size:16px;}
   
   <!-- Contact -->
   <div class="w3-container" id="contact" style="margin-top:75px">
-    <button type="button" id="new_order_btn" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">New Order</button>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
     <form id="order_form">
       <div class="w3-section">
         <label>Name</label>
@@ -46,119 +44,14 @@ body {font-size:16px;}
         <label>Email</label>
         <input class="w3-input w3-border" type="text" name="Email" required>
       </div>
-      <div class="w3-section">
-        <label>Department</label>
-        <input class="w3-input w3-border" type="text" name="Department" required>
-      </div>
-	  <div class="w3-section">
-        <label>Article</label>
-        <input class="w3-input w3-border" type="text" name="Article" required>
-      </div>
-	  <div class="w3-section">
-        <label>Order ID</label>
-        <input class="w3-input w3-border" type="text" name="Order Id" required>
-      </div>
-	  <div class="w3-section">
-        <label>Price</label>
-        <input class="w3-input w3-border" type="text" name="Price" required>
-      </div>
-	  <div class="w3-section">
-        <label>Quantity</label>
-        <input class="w3-input w3-border" type="text" name="Quantity" required>
-      </div>
       <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Order</button>
     </form>  
   </div>
-
-  <div class="w3-container" id="contact" style="margin-top:75px">
-    <button type="button" id="troubleshooting_btn" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Support</button>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <form id="support_form">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
-      </div>
-	  <div class="w3-section">
-          <label>Department</label>
-		  <br>
-		  <select name="Department" id="dept">
-			<option value="IT">IT</option>
-			<option value="Sales">Sales</option>
-			<option value="Management">Management</option>
-		  </select>
-      </div>
-	  <div class="w3-section">
-        <label>Title</label>
-        <input class="w3-input w3-border" type="text" name="Price" required>
-      </div>
-	  <div class="w3-section">
-        <label>Explanation of the problem</label>
-		<br>
-		<textarea id="w3review" name="w3review" rows="4" cols="50">
-			
-		</textarea>
-  <br><br>
-  <input type="submit" value="Submit">
-      </div>
-      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Order</button>
-    </form>  
-  </div>
-   <div class="w3-container" id="contact" style="margin-top:75px">
-		<form action="./trial.html">
-			<button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Request Trial</button>
-		</form> 
-	</div>
 
 
 <!-- End page content -->
 </div>
 
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by a tired programmer. Made with &hearts;</p></div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
-
-$(document).ready(function(){
-	$("#order_form").hide();
-}) 
-
-$(document).ready(function(){
-	$("#support_form").hide();
-}) 
-
-
-$("#new_order_btn").click(function(){
-	$("#support_form").hide("slow");
-	$("#order_form").show("slow");
-})
- 
-$("#troubleshooting_btn").click(function(){
-	$("#order_form").hide("slow");
-	$("#support_form").show("slow");
-})
-
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
 
 </body>
 </html>
